@@ -1,0 +1,45 @@
+w
+@color-white: white;
+@color-black: black;
+@red: red;
+@w: 4em;
+@h: 4em;
+
+
+body,html
+{background: @red;
+  height: 100%;
+}
+.main{
+  margin-left: 20em;
+  margin-right: 0em;
+}
+
+.shadow{
+  text-shadow: 2px 1px 6px white;
+  font-size:44px;
+  text-align: center;
+}
+.col1{
+  margin: 1px;
+  float:left;
+  -moz-column-count: 1;
+  -webkit-column-count: 1;      
+  -o-column-count: 1;  
+  -ms-column-count: 1; 
+  column-count: 1;  
+  box-shadow: 15px 2px 25px black;  
+}
+
+.space1{
+   background: @color-white;
+   width: @w;
+   height: @h;
+  
+}
+.space2{
+  background: @color-black;
+  width: @w;
+  height: @h;
+}
+
