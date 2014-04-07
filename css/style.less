@@ -1,23 +1,34 @@
 @color-white: white;
 @color-black: black;
+@mix1: mix(red, green);
 @red: red;
 @w: 4em;
 @h: 4em;
 
 
-body,html
-{background: @red;
-  height: 100%;
-}
+*,body,html{background: @red;margin:0px;padding:0px;}
+/*container*/
 .main{
-  margin-left: 20em;
-  margin-right: 0em;
+ display:flex;
+ display:-webkit-flex;
+ margin-left: 30%; 
 }
-
-.shadow{
+.text{
+  margin: 24%;
+  display:inline;
   text-shadow: 2px 1px 6px white;
-  font-size:44px;
+  font-family: 'Sonsie One', cursive;
+  font-size: 60px;
   text-align: center;
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -o-transition: 5s;
+  -ms-transition: 5s;
+  transition: 5s;  
+}
+.text:hover{
+  cursor:pointer;
+  text-shadow: 2px 1px 6px red;
 }
 .col1{
   margin: 1px;
@@ -27,18 +38,22 @@ body,html
   -o-column-count: 1;  
   -ms-column-count: 1; 
   column-count: 1;  
-  box-shadow: 15px 2px 25px black;  
+  box-shadow: 2px 11px 15px black;  
 }
 
 .space1{
-   background: @color-white;
-   width: @w;
-   height: @h;
-  
+  cursor: pointer;
+  background: @color-white;
+  width: @w;
+  height:@h;
+  display-direction:row;
+  display-direction:-webkit-row;  
 }
 .space2{
   background: @color-black;
+  display-direction:row;
+  display-direction:-webkit-row;  
   width: @w;
-  height: @h;
+  height:@h; 
 }
-
+footer{height: 2.5em;width: 100%;background: #fff;text-align: center;position: relative;}

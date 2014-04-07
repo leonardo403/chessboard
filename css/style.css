@@ -1,0 +1,62 @@
+*,
+body,
+html {
+  background: #ff0000;
+  margin: 0px;
+  padding: 0px;
+}
+/*container*/
+.main {
+  display: flex;
+  display: -webkit-flex;
+  margin-left: 30%;
+}
+.text {
+  margin: 24%;
+  display: inline;
+  text-shadow: 2px 1px 6px white;
+  font-family: 'Sonsie One', cursive;
+  font-size: 60px;
+  text-align: center;
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -o-transition: 5s;
+  -ms-transition: 5s;
+  transition: 5s;
+}
+.text:hover {
+  cursor: pointer;
+  text-shadow: 2px 1px 6px red;
+}
+.col1 {
+  margin: 1px;
+  float: left;
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  -o-column-count: 1;
+  -ms-column-count: 1;
+  column-count: 1;
+  box-shadow: 2px 11px 15px black;
+}
+.space1 {
+  cursor: pointer;
+  background: #ffffff;
+  width: 4em;
+  height: 4em;
+  display-direction: row;
+  display-direction: -webkit-row;
+}
+.space2 {
+  background: #000000;
+  display-direction: row;
+  display-direction: -webkit-row;
+  width: 4em;
+  height: 4em;
+}
+footer {
+  height: 2.5em;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
